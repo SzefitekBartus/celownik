@@ -1,0 +1,179 @@
+:root {
+    --primary-bg: #1B263B;
+    --secondary-bg: #2C3E50;
+    --card-bg: #415A77;
+    --text-color: #E0E1DD;
+    --accent-color: #61A5C2;
+    --accent-hover: #89C2D9;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin: 0;
+}
+
+.form-container {
+    background-color: var(--secondary-bg);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+#addCrosshairForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#addCrosshairForm input[type="text"],
+#addCrosshairForm button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--card-bg);
+    font-size: 1rem;
+}
+
+#addCrosshairForm input[type="text"] {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+}
+
+#addCrosshairForm label {
+    font-size: 0.9rem;
+    color: #a9b3c4;
+}
+
+#addCrosshairForm input[type="file"] {
+    color: #a9b3c4;
+}
+
+#addCrosshairForm button {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#addCrosshairForm button:hover {
+    background-color: var(--accent-hover);
+}
+
+.crosshair-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.crosshair-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 1.4rem;
+    background-color: var(--secondary-bg);
+    text-align: center;
+}
+
+.crosshair-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #222;
+}
+
+.code-container {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.code-container pre {
+    background-color: var(--primary-bg);
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--secondary-bg);
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin-top: 0;
+}
+
+.code-container code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.copy-btn, .delete-btn {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.copy-btn {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+}
+
+.copy-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.delete-btn {
+    background-color: #c26161;
+    color: var(--primary-bg);
+}
+
+.delete-btn:hover {
+    background-color: #d98989;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #778DA9;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokalna Baza Celowników CS2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Lokalna Baza Celowników CS2</h1>
+        <p>Dodaj celownik za pomocą formularza. Zostanie on zapisany w Twojej przeglądarce.</p>
+    </header>
+
+    <section class="form-container">
+        <h2>Dodaj nowy celownik</h2>
+        <form id="addCrosshairForm">
+            <input type="text" id="crosshairTitle" placeholder="Nazwa celownika (np. Mój ulubiony)" required>
+            <input type="text" id="crosshairCode" placeholder="Kod celownika CS2" required>
+            <label for="crosshairImage">Zdjęcie poglądowe (opcjonalnie)</label>
+            <input type="file" id="crosshairImage" accept="image/*">
+            <button type="submit">Dodaj do bazy</button>
+        </form>
+    </section>
+
+    <main>
+        <div class="crosshair-gallery">
+            </div>
+    </main>
+
+    <footer>
+        <p>Stworzone dla graczy CS2</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
